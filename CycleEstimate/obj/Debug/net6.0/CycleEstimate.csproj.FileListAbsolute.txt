@@ -1,0 +1,15 @@
+C:\_Projects\SplamyMote\CycleEstimate\bin\Debug\net6.0\CycleEstimate.exe
+C:\_Projects\SplamyMote\CycleEstimate\bin\Debug\net6.0\CycleEstimate.deps.json
+C:\_Projects\SplamyMote\CycleEstimate\bin\Debug\net6.0\CycleEstimate.runtimeconfig.json
+C:\_Projects\SplamyMote\CycleEstimate\bin\Debug\net6.0\CycleEstimate.dll
+C:\_Projects\SplamyMote\CycleEstimate\bin\Debug\net6.0\CycleEstimate.pdb
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.csproj.AssemblyReference.cache
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.AssemblyInfoInputs.cache
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.AssemblyInfo.cs
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.csproj.CoreCompileInputs.cache
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.dll
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\refint\CycleEstimate.dll
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.pdb
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\CycleEstimate.genruntimeconfig.cache
+C:\_Projects\SplamyMote\CycleEstimate\obj\Debug\net6.0\ref\CycleEstimate.dll

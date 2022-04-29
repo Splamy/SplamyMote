@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "Analysis"
+		},
+		{
+			"path": "Arduino"
+		},
+		{
+			"path": "CycleEstimate"
+		},
+		{
+			"path": "Frontend"
+		}
+	],
+	"settings": {}
+}

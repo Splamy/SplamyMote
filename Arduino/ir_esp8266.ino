@@ -1,68 +1,38 @@
 #include <Arduino.h>
+#include <ESP8266WiFi.h>
 #include <IRremoteESP8266.h>
 #include <IRrecv.h>
 #include <IRsend.h>
 #include <IRutils.h>
+#include <WiFiUdp.h>
 #include <string>
+#include <secrets.h>
 
 #pragma GCC diagnostic error "-Wall"
 #pragma GCC diagnostic error "-Wextra"
 
-const uint16_t kRecvPin = D1;
-uint64_t key_value = 0;
 bool toggle = false;
-int lightOn = 0;
-
+const uint16_t kRecvPin = D1;
 const int greenPin = D3;
 const int redPin = D4;
 const int irPin = D2;
 const int blueButton = D5;
 
+uint8_t udpRecvBuffer[1500];
+uint8_t udpSendBuffer[1500];
+uint16_t irSendBuffer[128];
+decode_results irDecodeBuffer;
+
 IRrecv irrecv(kRecvPin);
 IRsend irsend(irPin, false, true);
 
-decode_results results;
-
-const uint64_t codes[] = {
-	0xF700FF,
-	0xF7807F,
-	0xF740BF,
-	0xF7C03F,
-	0xF720DF,
-	0xF7A05F,
-	0xF7609F,
-	0xF7E01F,
-	0xF710EF,
-	0xF7906F,
-	0xF750AF,
-	0xF7D02F,
-	0xF730CF,
-	0xF7B04F,
-	0xF7708F,
-	0xF7F00F,
-	0xF708F7,
-	0xF78877,
-	0xF748B7,
-	0xF7C837,
-	0xF728D7,
-	0xF7A857,
-	0xF76897,
-	0xF7E817,
-};
-
-const uint16_t sendOn[]{
-	4500, 2250, 250, 250, 250, 750, 250, 250, 250, 250, 250, 250, 250, 750,
-	250, 250, 250, 250, 250, 750, 250, 250, 250, 750, 250, 750, 250, 750, 250,
-	250, 250, 750, 250, 750, 250, 250, 250, 250, 250, 750, 250, 750, 250, 250,
-	250, 250, 250, 250, 250, 250, 250, 750, 250, 750, 250, 250, 250, 250, 250,
-	750, 250, 750, 250, 750, 250, 750, 250};
-
-const uint16_t sendOn2[]{
-	9000, 4500, 500, 500, 500, 1500, 500, 500, 500, 500, 500, 500, 500, 1500,
-	500, 500, 500, 500, 500, 1500, 500, 500, 500, 1500, 500, 1500, 500, 1500,
-	500, 500, 500, 1500, 500, 1500, 500, 500, 500, 500, 500, 1500, 500, 1500,
-	500, 500, 500, 500, 500, 500, 500, 500, 500, 1500, 500, 1500, 500, 500,
-	500, 500, 500, 1500, 500, 1500, 500, 1500, 500, 1500, 500};
+enum class Season
+{
+    Summer,
+    Spring,
+    Winter,
+    Autumn
+}; 
 
 IRAM_ATTR void buttonPressed()
 {
@@ -74,22 +44,48 @@ uint16_t round_to_nearest(uint16_t value, uint16_t nearest)
 	return (value + (nearest / 2)) / nearest * nearest;
 }
 
+void blink_led(int pin, int times)
+{
+	for (int i = 0; i < times; i++)
+	{
+		digitalWrite(pin, HIGH);
+		delay(100);
+		digitalWrite(pin, LOW);
+		delay(100);
+	}
+}
+
 // the setup function runs once when you press reset or power the board
 void setup()
 {
-	Serial.begin(115200);
-	irrecv.enableIRIn(); // Start the receiver
-	irsend.begin();
-	while (!Serial) // Wait for the serial connection to be establised.
-		delay(50);
-	Serial.println();
-	Serial.print("IRrecvDemo is now running and waiting for IR message on Pin ");
-	Serial.println(kRecvPin);
 	pinMode(greenPin, OUTPUT);
 	pinMode(redPin, OUTPUT);
 	pinMode(blueButton, INPUT_PULLUP);
-
 	attachInterrupt(digitalPinToInterrupt(blueButton), buttonPressed, RISING);
+
+	Serial.begin(115200);
+	irrecv.enableIRIn(); // Start the receiver
+	irsend.begin();
+	WiFi.begin(wlan_ssid, wlan_pass);
+
+	while (!Serial)
+	{
+		blink_led(redPin, 1);
+		delay(50);
+	}
+
+	blink_led(greenPin, 1);
+
+	while (WiFi.status() != WL_CONNECTED)
+	{
+		blink_led(redPin, 1);
+		delay(500);
+	}
+
+	blink_led(greenPin, 2);
+
+	Serial.print("Connected, IP address: ");
+	Serial.println(WiFi.localIP());
 }
 
 // the loop function runs over and over again forever
@@ -115,9 +111,9 @@ void loop()
 
 		Serial.print(resultToHumanReadableBasic(&results));
 		yield();
-		//Serial.println(resultToTimingInfo(&results));
-		//yield(); // Feed the WDT (again)
-		// Output the results as source code
+		// Serial.println(resultToTimingInfo(&results));
+		// yield(); // Feed the WDT (again)
+		//  Output the results as source code
 		Serial.println(resultToSourceCode(&results));
 		Serial.println(""); // Blank line between entries
 		yield();

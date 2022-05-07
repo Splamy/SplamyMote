@@ -7,7 +7,7 @@ https://crates.io/crates/esp8266-hal
 - `python ./x.py build`
 
 - `rustup toolchain link xtensa /path/to/rust-xtensa/build/x86_64-unknown-linux-gnu/stage1`
-   => `rustup toolchain link xtensa E:/_Projects/rust-xtensa/build/x86_64-pc-windows-msvc/stage0`
+   => `rustup toolchain link xtensa E:/_Projects/rust-xtensa/build/x86_64-pc-windows-msvc/stage1`
 
 Download from
 https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/windows-setup.html

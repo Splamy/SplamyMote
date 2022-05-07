@@ -1,0 +1,155 @@
+﻿@page "/"
+@using SplamyMoteServer.Data
+@implements IDisposable
+@inject IRManager manager
+@inject IRCommunicator comm
+
+<PageTitle>Learn</PageTitle>
+
+<h1>Learn mote</h1>
+
+<MudGrid>
+    <MudItem xs="6">
+        @foreach (var moRemote in manager.Remotes)
+        {
+            <MudPaper Class="pa-16 ma-2" Elevation="3">
+                <h2>@(moRemote.Name)</h2>
+                <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+                @if (LearnMode)
+                {
+                    <MudButton Variant="Variant.Filled" OnClick="() => AddMoButtton(moRemote)">Add Button</MudButton>
+                }
+                <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+                @foreach (var moButton in moRemote.Buttons)
+                {
+                    <MudButton Variant="@(WorkMoButton == moButton ? Variant.Filled : Variant.Outlined)"
+                       OnClick="() => SetActive(moRemote, moButton)"
+                       Disabled="!LearnMode && moButton.Data == null">&nbsp;@(moButton.Label)&nbsp;</MudButton>
+                }
+            </MudPaper>
+        }
+        @if (LearnMode)
+        {
+            <MudButton Variant="Variant.Filled" OnClick="AddMoRemote">Add Remote</MudButton>
+        }
+
+    </MudItem>
+    <MudItem xs="6">
+        <MudPaper Class="pa-16 ma-2" Elevation="3" Style="position: sticky; top: 6em;">
+            <MudButton OnClick="() => Save()" Variant="Variant.Filled">Save</MudButton>
+            <MudButton OnClick="() => Connect()" Variant="Variant.Filled">Connect</MudButton>
+            <MudButton OnClick="() => SetLearn()" Variant="Variant.Filled">Set Learn</MudButton>
+            <MudButton OnClick="() => SetSend()" Variant="Variant.Filled">Set Send</MudButton>
+
+            @if (WorkMoRemote != null)
+            {
+                <MudTextField @bind-Value="WorkMoRemote.Name" Label="Remote Name" Variant="Variant.Text"></MudTextField>
+            }
+            @if (WorkMoButton != null)
+            {
+                <MudFocusTrap DefaultFocus="DefaultFocus.FirstChild">
+                    <MudTextField @ref="labelField" @bind-Value="WorkMoButton.Label" Label="Label" Variant="Variant.Text"></MudTextField>
+                </MudFocusTrap>
+                @if (WorkMoButton.Data != null)
+                {
+                    <MudField Label="IRData:Base" Variant="Variant.Text">@(WorkMoButton.Data.Base)</MudField>
+                    <MudField Label="IRData:Times" Variant="Variant.Text">@(string.Join(", ", WorkMoButton.Data.Times) + (WorkMoButton.Data.Repeating ? "..." : "."))</MudField>
+                }
+            }
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+
+@code {
+    private MudTextField<string> labelField;
+    public MoRemote? WorkMoRemote { get; set; }
+    public MoButton? WorkMoButton { get; set; }
+    public bool LearnMode = false;
+
+    protected override void OnInitialized()
+    {
+        comm.IRReceived += GotIRData;
+    }
+
+    void GotIRData(IRData irData)
+    {
+        InvokeAsync(() =>
+        {
+            if (WorkMoButton != null)
+            {
+                WorkMoButton.Data = irData;
+                StateHasChanged();
+            }
+        });
+    }
+
+    async Task SetActive(MoRemote moRemote, MoButton moButton)
+    {
+        if (LearnMode)
+        {
+            WorkMoRemote = moRemote;
+            WorkMoButton = moButton;
+            if (labelField != null)
+            {
+                await labelField.FocusAsync();
+            }
+        }
+        else
+        {
+            if (moButton.Data != null)
+            {
+                var irm = new IRMessage();
+                irm.SetIRData(moButton.Data);
+                await comm.Send(irm);
+            }
+        }
+    }
+
+    void AddMoRemote()
+    {
+        manager.Remotes.Add(new());
+        StateHasChanged();
+    }
+
+    void AddMoButtton(MoRemote moRemote)
+    {
+        moRemote.Buttons.Add(new());
+        StateHasChanged();
+    }
+
+    void Save()
+    {
+        manager.Save();
+    }
+
+    async Task Connect()
+    {
+        var irm = new IRMessage();
+        irm.SetIpInit();
+        await comm.Send(irm);
+    }
+
+    async Task SetLearn()
+    {
+        var irm = new IRMessage();
+        irm.SetIRLearn();
+        await comm.Send(irm);
+        LearnMode = true;
+    }
+
+    async Task SetSend()
+    {
+        var irm = new IRMessage();
+        irm.SetIRSend();
+        await comm.Send(irm);
+        LearnMode = false;
+        WorkMoRemote = null;
+        WorkMoButton = null;
+    }
+
+    void IDisposable.Dispose()
+    {
+        comm.IRReceived -= GotIRData;
+    }
+}

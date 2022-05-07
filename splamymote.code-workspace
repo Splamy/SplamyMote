@@ -10,10 +10,10 @@
 			"path": "CycleEstimate"
 		},
 		{
-			"path": "Frontend"
+			"path": "rustoino"
 		},
 		{
-			"path": "rustoino"
+			"path": "Backend"
 		}
 	],
 	"settings": {

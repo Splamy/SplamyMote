@@ -1,0 +1,672 @@
+[
+  {
+    "Buttons": [
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEBAQEBAwEDAQEBAQEBAQEBAwEDAQEBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "ON"
+      },
+      {
+        "Data": {
+          "Base": 480,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQEBAQEBAQMBAQEBAQEBAQEDAQMBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "OFF"
+      },
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEBAQEBAQEDAQMBAQEBAQEBAwEDAQMBAQEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "BRIGHT+"
+      },
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQMBAwEDAQMBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "BRIGHT-"
+      },
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQMBAwEBAQEBAQEBAQEBAQEBAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "COLDER"
+      },
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQMBAwEDAQEBAQEBAQEBAQEBAQEBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "WARMER"
+      },
+      {
+        "Data": {
+          "Base": 490,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQMBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "3000K"
+      },
+      {
+        "Data": {
+          "Base": 480,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEBAQMBAwEBAQMBAQEBAQEBAwEBAQEBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "4000K"
+      },
+      {
+        "Data": {
+          "Base": 500,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEDAQEBAQEDAQMBAQEBAQEBAQEDAQMBAQEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "6000K"
+      },
+      {
+        "Data": {
+          "Base": 490,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEBAQMBAQEBAQMBAQEBAQEBAwEBAQMBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Night"
+      },
+      {
+        "Data": {
+          "Base": 490,
+          "Times": "EgkBAQEDAQEBAQEBAQMBAQEBAQMBAQEDAQMBAwEBAQMBAwEBAQMBAQEDAQEBAQEBAQEBAwEBAQMBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Timer"
+      }
+    ],
+    "Name": "Mömax Lampe"
+  },
+  {
+    "Buttons": [
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEBAQEBAQEBAQEBAQEBAQEBAwEDAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "UP"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEDAQEBAQEBAQEBAQEBAQEBAQEDAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "DOWN"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEBAQMBAQEBAQEBAQEBAQEBAwEBAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "OFF"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEDAQMBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "ON"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEBAQEBAwEBAQEBAQEBAQEBAwEDAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "R"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEDAQEBAwEBAQEBAQEBAQEBAQEDAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "G"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEBAQMBAwEBAQEBAQEBAQEBAwEBAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "B"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAQEDAQMBAwEDAQMBAwEBAQEBAQEBAQEBAQEBAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "W"
+      }
+    ],
+    "Name": "RGB"
+  },
+  {
+    "Buttons": [
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQECAQECAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Power"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAQEBAQEBAQECAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "1"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQEBAQEBAgI=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "2"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAQEBAQEBAgEBAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "3"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQEBAQICAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "4"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAQEBAQICAgE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "5"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQEBAQIBAQI=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "6"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAQEBAQIBAQEBAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "7"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQECAgEBAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "8"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAQECAgEBAgE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "9"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAQEBAQEBAQEBAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "0"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAICAgICAgIBAQICAQEBAQEB",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "/\\"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwIBAQEBAgICAgEBAgIBAQEBAgE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "\\/"
+      },
+      {
+        "Data": {
+          "Base": 880,
+          "Times": "CwICAgICAgIBAQICAgICAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "<"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAIBAQEBAgICAgEBAgICAQEC",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": ">"
+      },
+      {
+        "Data": {
+          "Base": 880,
+          "Times": "CwICAgICAgIBAQICAgEBAQEB",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "OK"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwIBAQEBAgICAgEBAQEBAQEBAQECAQ==",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Info"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAICAgICAgIBAQEBAQEBAQEBAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Back"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgEBAgIBAQEBAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Vol+"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgEBAgIBAQEBAgE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Vol-"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "DAEBAgEBAgICAgICAQEBAQEBAQE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "CH+"
+      },
+      {
+        "Data": {
+          "Base": 890,
+          "Times": "CwEBAQECAgICAgICAQEBAQEBAgE=",
+          "Repeating": true
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "CH-"
+      }
+    ],
+    "Name": "MNET"
+  },
+  {
+    "Buttons": [
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAwEDAQEBAQEBAQEBAQEDAQEBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Power"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAQEBAQEBAQEBAQEBAQEDAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "1"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQMBAQEBAQEBAQEBAQEBAwEBAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "2"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "3"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAwEBAQEBAQEBAQEBAwEDAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "4"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAwEBAQEBAQEBAQEBAQEDAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "5"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQMBAwEBAQEBAQEBAQEBAwEBAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "6"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAwEBAQEBAQEBAQEBAQEBAQEBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "7"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAQEDAQEBAQEBAQEBAwEDAQMBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "8"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAQEDAQEBAQEBAQEBAQEDAQMBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "9"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAQEBAQEBAQEBAQEBAwEDAQMBAwEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "0"
+      },
+      {
+        "Data": {
+          "Base": 540,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQMBAwEBAQMBAQEBAQEBAwEBAQEBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "/\\"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAwEBAQMBAQEBAQEBAQEBAQEBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "\\/"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAQEDAQMBAQEBAQEBAQEDAQMBAQEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "<"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAQEDAQMBAQEBAQEBAwEDAQMBAQEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": ">"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQEBAwEBAQMBAQEBAQEBAQEDAQEBAwEBAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "OK"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAwEDAQEBAQEBAQEBAwEDAQEBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Info"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAQEDAQEBAQEDAQEBAwEDAQMBAQEDAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Back"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAwEBAQEBAQEDAQEBAwEDAQEBAwEDAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Vol+"
+      },
+      {
+        "Data": {
+          "Base": 560,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAQEBAQEBAQEDAQEBAQEBAQMBAwEDAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Vol-"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQMBAQEDAQEBAQEDAQEBAwEBAQMBAQEDAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "CH+"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAQEDAQEBAQEDAQEBAQEBAQMBAQEDAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "CH-"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEDAQMBAwEDAQEBAQEBAQEBAQEBAQEBAQEDAQMBAwEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "Settings"
+      },
+      {
+        "Data": {
+          "Base": 550,
+          "Times": "EAgBAQEBAQEBAQEBAQEBAQEBAQMBAwEDAQMBAwEDAQEBAwEBAQEBAwEDAQMBAQEDAQEBAwEDAQEBAQEBAQMBAQEDAQ==",
+          "Repeating": false
+        },
+        "PosX": 0,
+        "PosY": 0,
+        "Label": "EXIT"
+      }
+    ],
+    "Name": "Hisense"
+  }
+]
